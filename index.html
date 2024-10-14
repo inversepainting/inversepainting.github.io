@@ -20,7 +20,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLCVEPCTJV"></script>
-<script> 
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -200,8 +200,8 @@
              alt="results."/>
         <!-- Set width to 100% and height to auto to maintain aspect ratio -->
         <h2 class="subtitle">
-     We present <i>Inverse Painting</i>, a diffusion-based method to generate time-lapse videos of the painting process from a target painting. 
-        By training on acrylic paintings with a similar artistic style to that of the first example in this figure, our method is capable of handling a diverse range of styles (e.g., Van Gogh, above bottom). 
+     We present <i>Inverse Painting</i>, a diffusion-based method to generate time-lapse videos of the painting process from a target painting.
+        By training on acrylic paintings with a similar artistic style to that of the first example in this figure, our method is capable of handling a diverse range of styles (e.g., Van Gogh, above bottom).
         The resulting videos resemble how human artists typically paint, for example, from back to front, focusing on semantic objects or regions at a time, and employing layering techniques.  Images courtesy Catherine Kay Greenup and Rawpixel.
         </h2>
       </div>
@@ -252,8 +252,8 @@ Our approach incorporates text and region understanding to define a set of paint
       </div>
       <p>
 The training has two stages. The instruction generation stage (left two gray boxes) includes the text instruction generator (green) and the mask instruction generator (light orange). These generators produce the text and mask instructions essential for updating the canvas in the next stage.
-    The second stage is canvas rendering (third gray box), where a diffusion-based renderer generates the next image based on multiple conditional signals, such as text and mask instructions.  
-    To simplify the figure, we omit the VAE encoder, CLIP encoder, and text encoder. 
+    The second stage is canvas rendering (third gray box), where a diffusion-based renderer generates the next image based on multiple conditional signals, such as text and mask instructions.
+    To simplify the figure, we omit the VAE encoder, CLIP encoder, and text encoder.
  During testing at step $t-1$ (last gray box), we first generate a text instruction (green arrows), which is then used to create a region mask (orange arrows). Both are then provided to the canvas rendering stage to produce the next image (blue arrows).   Image courtesy Catherine Kay Greenup.
       </p>
 
@@ -435,11 +435,22 @@ The training has two stages. The instruction generation stage (left two gray box
 
  <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered ">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Acknowledgements</h2>
+        <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
              <p>
-This work was supported by the UW Reality Lab and Google. Special thanks to <a href="https://yuqunw.github.io">Yuqun Wu</a>, <a href="https://tianyuanzhang.com/">Tianyuan Zhang</a>, <a href="https://shihmengli.github.io/">Meng-Li Shih</a>, and <a href="https://shanmy.github.io">Mengyi Shan</a>, for proofreading the paper.  
+               Special thanks to <a href="https://zi-lin.com/">Zi Lin</a> for her constructive feedback and help in data collection;
+               <a href="https://yuqunw.github.io">Yuqun Wu</a>,
+               <a href="https://tianyuanzhang.com/">Tianyuan Zhang</a>,
+               <a href="https://shihmengli.github.io/">Meng-Li Shih</a>, and
+               <a href="https://shanmy.github.io">Mengyi Shan</a> for their help in proofreading the paper; and
+               <a href="https://www.linkedin.com/in/xinyibbtxdy">Xinyi Liu</a>,
+               <a href="https://eveneveno.github.io/lnxu/">Linning Xu</a>,
+               <a href="https://roxanneluo.github.io/">Xuan Luo</a>, and
+               <a href="https://zi-lin.com/">Zi Lin</a> for their valuable insights on the painting process.
+      </p>
+      <p style="margin-top: 1rem;">
+        This work was supported by the UW Reality Lab and Google.
       </p>
 
         </div>
